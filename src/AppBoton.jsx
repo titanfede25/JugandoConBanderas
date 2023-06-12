@@ -34,6 +34,7 @@ return (
 return (
 <div className="App">
     <img src={dogImage} alt="Un perro" />
+    <p>{dogImage}</p>
     <button onClick={fetchDogImage}>Cambiar imagen</button>
 </div>
 );
