@@ -22,9 +22,6 @@ axios.get('https://dog.ceo/api/breeds/image/random')
     });
 };
 
-const handleButtonClick = () => {
-fetchDogImage();
-};
 
 if (isLoading) {
 return (
@@ -37,7 +34,7 @@ return (
 return (
 <div className="App">
     <img src={dogImage} alt="Un perro" />
-    <button onClick={handleButtonClick}>Cambiar imagen</button>
+    <button onClick={fetchDogImage}>Cambiar imagen</button>
 </div>
 );
 }
