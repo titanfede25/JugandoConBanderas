@@ -11,9 +11,10 @@ fetchDogImage();
 
 const fetchDogImage = () => {
 setIsLoading(true);
-axios.get('https://dog.ceo/api/breeds/image/random')
+axios.get('https://countriesnow.space/api/v0.1/countries/flag/images')
     .then((response) => {
-    setDogImage(response.data.message);
+    let num = Math.round(Math.random() * 219);
+    setDogImage(response.data.data[num].flag);
     setIsLoading(false);
     })
     .catch((error) => {
