@@ -1,14 +1,22 @@
-.App {
-  text-align: center;
+.Fondo {
+   text-align: center;
+   background: linear-gradient(rgb(168, 168, 241), pink);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
 }
 button{ 
-  width: '300px';
-  max-width: '200%';
-  height: '50px'; 
-  background-color: '#0076C5';
-  border-color: '#0076C5';
-  border-radius: '2em';
-  box-shadow: '0 2px 4px #005b98';
-  color: 'white';
-  text-align: 'center';
+  width: '30%';
+  background-color:rgb(226, 199, 247);
+  border: none;
+  border-radius: 60px;
+  outline:none;
+}
+input{
+  background-color: #ffffff9a;
+
+    margin-top: auto;
+    color: rgb(0, 0, 0);/*COLOR DE LA FUENTE*/
+    text-align: center;
+    
 }
