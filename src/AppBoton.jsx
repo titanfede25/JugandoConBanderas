@@ -24,7 +24,7 @@ export default function AppBoton() {
     };
 
     const submit = () => {
-        if(document.getElementById("input").value.length == 0){
+        if(document.getElementById("input").value.length === 0){
             alert("Error: The field should not be empty")
         }
         else{
@@ -50,14 +50,27 @@ export default function AppBoton() {
 
     return (
         <div className="Fondo">
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+            <div className="Textito">
+             <p><span>Guess The FLag</span></p>   
+            </div>
+            <div className='Imagen'>
             <img src={image} alt="Bandera" height={350}width={700}/>
+            </div>
+            <div className="Textito-Puntos">
             <p>{message}</p>
             <p>Points: {points}</p>
+            </div>
+            <div className="contenedor">
             <div className='Input'>
             <input type="text" id="input" placeholder="Escriba el nombre del país aquí" ></input>
             </div>
+            <br></br>
             <div className='button'>
             <button  type="submit" onClick={submit}>Enviar</button>
+            </div>
             </div>
         </div>
     );

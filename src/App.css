@@ -1,22 +1,102 @@
-.Fondo {
-   text-align: center;
-   background: linear-gradient(rgb(168, 168, 241), pink);
-   background-repeat: no-repeat;
-   background-attachment: fixed;
+html{
+  background: linear-gradient(55deg, rgb(37, 36, 37) 0%, rgb(37, 36, 37) 30%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
+.contenedor{
+  text-align: center;
+}
 button{ 
-  width: '30%';
-  background-color:rgb(226, 199, 247);
+  width: 300px;
+  height: 25px;
+  background-color:#e2dfdf;
   border: none;
   border-radius: 60px;
   outline:none;
+  cursor:pointer;
+  float: center;
+  font-family:'Times New Roman', Times, serif;
 }
+button:hover {
+  background: rgb(99, 98, 98); 
+  color: #cacaca  ; 
+ }
 input{
   background-color: #ffffff9a;
-
+    width: 300px;
+    height: 25px;
     margin-top: auto;
     color: rgb(0, 0, 0);/*COLOR DE LA FUENTE*/
     text-align: center;
+    border-radius: 60px;
     
+    
+}
+.Textito-Puntos{
+  font-family:'Times New Roman', Times, serif;
+  
+  text-transform: capitalize;
+    
+    order: 2;
+    color: #cacaca  ; 
+    font-weight: 3  0;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 0.75em;
+    text-align: center;
+}
+.Textito{
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: underline;
+  text-transform: capitalize;
+    
+    order: 2;
+    color: #cacaca; 
+    font-weight: 3  0;
+    text-transform: uppercase;
+    font-size: 75px;
+    line-height: 0.75em;
+    text-align: center;
+    text-shadow: 3px 1px 1px #616161, 2px 2px 1px #616161, 4px 2px 1px #616161,
+      3px 3px 1px #616161, 5px 3px 1px #616161, 4px 4px 1px #616161,
+      6px 4px 1px #616161, 5px 5px 1px #616161, 7px 5px 1px #616161,
+      6px 6px 1px #616161, 8px 6px 1px #616161, 7px 7px 1px #616161,
+      9px 7px 1px #616161;
+  
+    
+}
+.Imagen{
+  background-color: rgba(73, 71, 73, 0.808);
+    padding: 80px 80px; 
+    text-align: center;
+}
+span {
+  display: block;
+  position: relative;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(73, 71, 73) 50%, rgb(37, 36, 37) 50%);
+  bottom:0;
+  left:-1%;
+  opacity:.5;
+  position:fixed;
+  right:-100%;
+  top:0;
+  z-index:-1;
+  
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:1s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+::placeholder{
+  font-family:cursive;
 }
